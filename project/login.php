@@ -1,4 +1,5 @@
 <?php
+session_start(); // Start the session at the beginning
 include 'db_config.php';
 $error_message = "";
 
@@ -11,16 +12,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } elseif (empty($password)) {
         $error_message = "Password is empty";
     } else {
-        $stmt = $conn->prepare("SELECT password FROM users WHERE username = ?");
+        $stmt = $conn->prepare("SELECT id, password FROM users WHERE username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $stmt->store_result();
 
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($hashed_password);
+            $stmt->bind_result($id, $hashed_password);
             $stmt->fetch();
 
             if (password_verify($password, $hashed_password)) {
+                // Set the user ID in the session
+                $_SESSION['user_id'] = $id;
+
+                // Redirect to welcome page or any other page
                 header("Location: welcome.php");
                 exit();
             } else {
@@ -35,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 $conn->close();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

@@ -158,7 +158,7 @@
                 <img src="Images/management.png" alt="Manage Tickets">
                 Manage Tickets
             </a>
-            <a href="#" class="btn">
+            <a href="profile.php" class="btn">
                 <img src="Images/accountant.png" alt="Profile">
                 Profile
             </a>

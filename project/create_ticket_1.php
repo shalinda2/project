@@ -77,7 +77,7 @@ session_start();
         .form-group label {
             margin-right: 10px;
             flex: 1;
-            min-width: 150px; 
+            min-width: 150px;
         }
 
         .form-group .input {
@@ -156,10 +156,12 @@ session_start();
             box-sizing: border-box;
             width: 70%;
         }
-
-        
-        
     </style>
+    <script>
+    function redirectToNextPage() {
+        window.location.href = 'create_ticket_2.php';
+    }
+</script>
 </head>
 
 <body>
@@ -222,17 +224,17 @@ session_start();
                             </select>
                         </div>
 
-                       
+
                     </form>
                 </div>
                 <div class="image-container">
                     <img src="Images/Data extraction-pana.png" alt="Ticket">
                 </div>
                 <div class="submit">
-                            <button type="submit" class="next-button">
-                                Next <img src="Images/next (1).png" alt="Arrow">
-                            </button>
-                        </div>
+                    <button type="submit" class="next-button" onclick="redirectToNextPage()">
+                        Next <img src="Images/next (1).png" alt="Arrow">
+                    </button>
+                </div>
             </div>
         </div>
     </div>

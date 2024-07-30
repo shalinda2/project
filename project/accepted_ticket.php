@@ -65,7 +65,7 @@ $result = $conn->query($query);
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
+                    <?php
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 echo "<tr>";
