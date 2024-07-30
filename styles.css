@@ -1,0 +1,1420 @@
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Home page styles */
+.home-container {
+    text-align: center;
+    height: 100%;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.main-image-container {
+    margin: auto;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.button-container {
+    margin-top: 20px;
+    position: static;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 20px 10px;
+    background-color: #D9D9D9;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7996c2;
+}
+
+
+
+
+/* Registration page styles */
+.register-container {
+    display: flex;
+    width: 100%;
+    height:auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    flex: 2;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.right-section {
+    flex: 3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnR {
+    display: inline-block;
+    padding: 4px 160px;
+    margin: 0 10px;
+    background-color: #98B3C1;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnR:hover {
+    background-color: #577197;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.register-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.reg-role input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.reg-role label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #98B3C1;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Styles for input icons */
+.form-group input {
+    padding-left: 40px; /* Add padding to make space for the icon */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Position the icon inside the input */
+    background-size: 20px 20px; /* Size of the icon */
+}
+
+#username {
+    background-image: url('Images\user (1).png'); /* Path to the username icon */
+}
+
+#password {
+    background-image: url('Images\key.png'); /* Path to the password icon */
+}
+
+
+
+
+/* Login page styles */
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    flex: 2;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.right-section {
+    flex: 3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.reg-role{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-login a {
+    margin: 0 10px;
+}
+
+.social-login img {
+    width: 40px;
+    height: 40px;
+}
+
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #98B3C1;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Page Styles */
+
+
+
+
+
+/* Create Ticket Page Styles */
+.ticket-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(120vh - 100px);
+}
+
+.middle-section {
+    flex: 2;
+    background-color: #DAE2E6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container {
+    flex: 1;
+}
+
+.form-container h2 {
+    text-align: left;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin: 10px 0 5px;
+}
+
+.form-container input, .form-container select {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.next-button {
+    background-color: #9fb1b9;
+    color: black;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.next-button img {
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.right-section nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-section nav ul li {
+    margin-bottom: 10px;
+}
+
+.right-section nav ul li a {
+    color: #283e4a;
+    text-decoration: none;
+}
+
+
+
+
+/* Ticket Status Page Styles */
+.ticket-status-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('images/background_image.png') no-repeat center center fixed; /* Background Image */
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.96); /* White overlay with 96% opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.ticket-status-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px; /* Space for the fixed navbar */
+}
+
+.ticket-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #A7BFCC;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+}
+
+.ticket-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.ticket-box span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+/* Manage Ticket Page Styles */
+.manage-ticket-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.manage-ticket-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Images\Online learning-pana.png') no-repeat center center fixed; /* Background Image */
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.manage-ticket-main h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.ticket-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ticket-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #A7BFCC;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    width: 300px; /* Adjust size for better fit */
+    height: 300px; /* Adjust size for better fit */
+}
+
+.ticket-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.ticket-box span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 5px;
+    width: 200%;
+}
+
+.bottom-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 500px) {
+    .ticket-box {
+        width: 50px; /* Adjust size for smaller screens */
+        height: 50px; /* Adjust size for smaller screens */
+    }
+    .ticket-box img {
+        width: 80px;
+        height: 80px;
+    }
+    .manage-ticket-main h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Open Ticket Page Styles */
+.open-ticket-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between; /* Adjust to center content properly */
+}
+
+.open-ticket-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Images/open_ticket_background.png') no-repeat center center fixed; /* Background Image */
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.open-ticket-main h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.ticket-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ticket-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #A7BFCC;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    width: 200px; /* Adjust size for better fit */
+    height: 200px; /* Adjust size for better fit */
+}
+
+.ticket-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.ticket-box span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.bottom-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .ticket-box {
+        width: 150px; /* Adjust size for smaller screens */
+        height: 150px; /* Adjust size for smaller screens */
+    }
+    .ticket-box img {
+        width: 80px;
+        height: 80px;
+    }
+    .open-ticket-main h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+/* Non Accepted Ticket Page Styles */
+.non-accepted-ticket-container {
+    display: flex;
+    flex-direction: column;
+    height: 500vh;
+    width: 500vw;
+}
+
+.non-accepted-ticket-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Images\Online learning-pana.png') no-repeat center center fixed; /* Background Image */
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.non-accepted-ticket-main h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-button img {
+    width: 5px;
+    height: 5px;
+}
+
+.table-section {
+    width: 80%;
+    max-width: 800px;
+}
+
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.ticket-table th, .ticket-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.ticket-table th {
+    background-color: #ddd;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.bottom-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content adjustments to account for fixed navbar */
+.main-content {
+    margin-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .ticket-table {
+        width: 100%;
+        max-width: 100%;
+    }
+    .ticket-table th, .ticket-table td {
+        padding: 5px;
+    }
+    .non-accepted-ticket-main h1 {
+        font-size: 1.5em;
+    }
+    .search-input {
+        width: 150px;
+    }
+}
+
+
+
+
+/* Accept Ticket Page Styles */
+.accept-ticket-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px; /* Adjust based on navbar height */
+}
+
+.details-section, .form-section {
+    background-color: #DAE2E6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.details-section h2, .form-section h2 {
+    margin-bottom: 20px;
+}
+
+.details-section p, .form-section label {
+    margin: 10px 0;
+}
+
+.form-section input, .form-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #98B3C1;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #577197;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.bottom-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .details-section, .form-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Accepted Ticket Page Styles */
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Images/non_accepted_ticket_background.png') no-repeat center center fixed; /* Background Image */
+    background-size: cover;
+    padding: 20px;
+    margin-top: 80px; /* Adjust based on navbar height */
+    text-align: center;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.table-section {
+    width: 80%;
+    max-width: 800px;
+}
+
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.ticket-table th, .ticket-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.ticket-table th {
+    background-color: #ddd;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.bottom-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .ticket-table {
+        width: 100%;
+        max-width: 100%;
+    }
+    .ticket-table th, .ticket-table td {
+        padding: 5px;
+    }
+    .main-content h1 {
+        font-size: 1.5em;
+    }
+    .search-input {
+        width: 150px;
+    }
+}
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Accepted Ticket Details Page Styles */
+.accepted-ticket-details-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px; /* Adjust based on navbar height */
+    background: url('Images/non_accepted_ticket_background.png') no-repeat center center fixed; /* Background Image */
+    background-size: cover;
+}
+
+.details-section, .form-section {
+    background-color: #DAE2E6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.details-section h2, .form-section h2 {
+    margin-bottom: 20px;
+}
+
+.details-section p, .form-section p {
+    margin: 10px 0;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.bottom-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .details-section, .form-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Closed Ticket Page Styles */
+.closed-ticket-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('Images/non_accepted_ticket_background.png') no-repeat center center fixed; /* Background Image */
+    background-size: cover;
+    padding: 20px;
+    margin-top: 80px; /* Adjust based on navbar height */
+    text-align: center;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.table-section {
+    width: 80%;
+    max-width: 800px;
+}
+
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.ticket-table th, .ticket-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.ticket-table th {
+    background-color: #ddd;
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.bottom-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .ticket-table {
+        width: 100%;
+        max-width: 100%;
+    }
+    .ticket-table th, .ticket-table td {
+        padding: 5px;
+    }
+    .main-content h1 {
+        font-size: 1.5em;
+    }
+    .search-input {
+        width: 150px;
+    }
+}
