@@ -45,20 +45,18 @@ $result = $conn->query($query);
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
+                    <?php
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 echo "<tr>";
-                                echo "<td>" . $row['ticket_id'] . "</td>";
-                                echo "<td>" . $row['status'] . "</td>";
-                                echo "<td>" . $row['created_at'] . "</td>";
-                                echo "<td>" . $row['closed_at'] . "</td>";
-                                echo "<td>" . $row['created_by'] . "</td>";
-                                echo "<td>" . $row['closed_by'] . "</td>";
+                                echo "<td>" . htmlspecialchars($row['ticket_id']) . "</td>";
+                                echo "<td>" . htmlspecialchars($row['status']) . "</td>";
+                                echo "<td>" . htmlspecialchars($row['created_at']) . "</td>";
+                                echo "<td>" . htmlspecialchars($row['created_by']) . "</td>";
                                 echo "</tr>";
                             }
                         } else {
-                            echo "<tr><td colspan='6'>No closed tickets found</td></tr>";
+                            echo "<tr><td colspan='4'>No closed tickets found</td></tr>";
                         }
                         ?>
                     </tbody>

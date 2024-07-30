@@ -1,3 +1,23 @@
+<?php
+session_start();
+include 'db_config.php';
+
+// Check if user is logged in
+if (!isset($_SESSION['user_id'])) {
+    echo "Error: User not logged in.";
+    exit;
+}
+
+$userID = $_SESSION['user_id']; // Fetch the user ID from the session
+
+// Fetch notifications from the database for the logged-in user
+$query = "SELECT created_at, title, message FROM notifications WHERE user_id = ? ORDER BY created_at DESC";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("i", $userID);
+$stmt->execute();
+$result = $stmt->get_result();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,27 +73,40 @@
         <button>Dismiss All</button>
         <div class="outer-div">
             <table>
-                <tr>
-                    <th><input type="checkbox"></th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Title</th>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>2024/05/20</td>
-                    <td>10:00:00</td>
-                    <td>You have new Open ticket with ticket ID IN00005</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>Title</td>
-                    <td>12:00:00</td>
-                    <td>You have new Open ticket with ticket ID IN00003</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            $date = date('Y/m/d', strtotime($row['created_at']));
+                            $time = date('H:i:s', strtotime($row['created_at']));
+                            echo "<tr>";
+                            echo "<td><input type='checkbox'></td>";
+                            echo "<td>" . htmlspecialchars($date) . "</td>";
+                            echo "<td>" . htmlspecialchars($time) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['title']) . ": " . htmlspecialchars($row['message']) . "</td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='4'>No notifications found</td></tr>";
+                    }
+                    ?>
+                </tbody>
             </table>
         </div>
     </div>
 </body>
 
 </html>
+
+<?php
+$stmt->close();
+$conn->close();
+?>

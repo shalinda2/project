@@ -39,11 +39,7 @@ if (isset($_GET['ticket_id'])) {
 </head>
 <body>
     <div class="accept-ticket-container">
-        <!-- Navigation Bar -->
-        <?php
-        include("inc_navbar.php")
-        ?>
-        <!-- Main Section -->
+        <?php include("inc_navbar.php"); ?>
         <div class="main-content">
             <div class="details-section">
                 <h2>Details</h2>
@@ -64,7 +60,7 @@ if (isset($_GET['ticket_id'])) {
                 <form action="accept_ticket.php" method="POST">
                     <input type="hidden" name="ticket_id" value="<?php echo $ticket['ticket_id']; ?>">
                     <label for="assign_time">Assign a Time:</label>
-                    <input type="text" id="assign_time" name="assign_time" required>
+                    <input type="datetime-local" id="assign_time" name="assign_time" required>
                     <label for="assign_location">Assign a Location:</label>
                     <input type="text" id="assign_location" name="assign_location" required>
                     <label for="sub_status">Change the Ticket Status:</label>
@@ -79,9 +75,7 @@ if (isset($_GET['ticket_id'])) {
                 </form>
             </div>
         </div>
-        <?php
-       include("inc_footer_navbar.php")
-       ?>
+        <?php include("inc_footer_navbar.php"); ?>
     </div>
 </body>
 </html>

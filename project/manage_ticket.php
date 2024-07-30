@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Manage Ticket</title>
 </head>
-<body> 
-    <div class="manage-ticket-container">
-        <!-- Navigation Bar -->
-        <?php
+
+<body> <?php
         include("inc_navbar.php")
         ?>
+    <div class="manage-ticket-container">
+        <!-- Navigation Bar -->
+
         <!-- Main Section -->
         <div class="manage-ticket-main">
-       
+
             <h2>Manage Ticket</h2>
             <div class="ticket-icons">
                 <a href="open_ticket.php" class="ticket-box">
@@ -37,8 +39,9 @@
         </div>
         <!-- Bottom Links -->
         <?php
-       include("inc_footer_navbar.php")
-       ?>
+        include("inc_footer_navbar.php")
+        ?>
     </div>
 </body>
+
 </html>
